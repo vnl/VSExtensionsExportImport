@@ -1,7 +1,9 @@
 # Road map
 
-- [x] A feature that has been completed
-- [ ] A feature that has NOT yet been completed
+- [x] Ability to be installed in VS2015 and VS2017
+- [ ] Ability to package (export) the current list of extensions
+- [ ] Ability to import the output file and then run through the installations. 
+- [ ] Check to see if the plug-in is compatible with the VS 
 
 Features that have a checkmark are complete and available for
 download in the
@@ -12,14 +14,6 @@ download in the
 These are the changes to each version that has been released
 on the official Visual Studio extension gallery.
 
-## 1.1
+## 0.1
 
-- [x] Feature 3
-- [x] Feature 4
-
-## 1.0
-
-- [x] Initial release
-- [x] Feature 1
-- [x] Feature 2
-  - [x] Sub feature
+- [x] Install package for VS2015 and VS2017
