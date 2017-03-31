@@ -4,17 +4,9 @@
 // </copyright>
 //------------------------------------------------------------------------------
 
-using System;
-using System.ComponentModel.Design;
-using System.Diagnostics;
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
-using System.Runtime.InteropServices;
-using Microsoft.VisualStudio;
-using Microsoft.VisualStudio.OLE.Interop;
 using Microsoft.VisualStudio.Shell;
-using Microsoft.VisualStudio.Shell.Interop;
-using Microsoft.Win32;
+using System;
+using System.Runtime.InteropServices;
 
 namespace VSExtensionsExportImport
 {
@@ -36,21 +28,16 @@ namespace VSExtensionsExportImport
     /// </para>
     /// </remarks>
     [PackageRegistration(UseManagedResourcesOnly = true)]
-    [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About
+    [InstalledProductRegistration("#110", "#112", Vsix.Version, IconResourceID = 400)] // Info on this package for Help/About
     [ProvideMenuResource("Menus.ctmenu", 1)]
-    [Guid(VSExtensionsExportImportCommandPackage.PackageGuidString)]
-    [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "pkgdef, VS and vsixmanifest are valid VS terms")]
-    public sealed class VSExtensionsExportImportCommandPackage : Package
+    [Guid(PackageGuids.guidVSExtensionsExportImportCommandPackageString)]
+    public sealed class VSPackage : Package
     {
+        
         /// <summary>
-        /// VSExtensionsExportImportCommandPackage GUID string.
+        /// Initializes a new instance of the <see cref="VSExtensionsExpImpCmd"/> class.
         /// </summary>
-        public const string PackageGuidString = "7224556f-1244-48ea-b51a-5a3a446733e2";
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="VSExtensionsExportImportCommand"/> class.
-        /// </summary>
-        public VSExtensionsExportImportCommandPackage()
+        public VSPackage()
         {
             // Inside this method you can place any initialization code that does not require
             // any Visual Studio service because at this point the package object is created but
@@ -66,7 +53,7 @@ namespace VSExtensionsExportImport
         /// </summary>
         protected override void Initialize()
         {
-            VSExtensionsExportImportCommand.Initialize(this);
+            VSExtensionsExpImpCmd.Initialize(this);
             base.Initialize();
         }
 

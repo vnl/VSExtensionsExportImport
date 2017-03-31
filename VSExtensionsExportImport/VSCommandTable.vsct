@@ -56,9 +56,23 @@
         <Parent guid="guidVSExtensionsExportImportCommandPackageCmdSet" id="MyMenuGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
+          <ButtonText>Export/Import Extensions</ButtonText>
+        </Strings>
+      </Button>
+      <!--<Button guid="guidVSExtensionsExportImportCommandPackageCmdSet" id="VSExtensionsExportCommandId" priority="0x0100" type="Button">
+        <Parent guid="guidVSExtensionsExportImportCommandPackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidImages" id="bmpPic1" />
+        <Strings>
           <ButtonText>Export Extensions</ButtonText>
         </Strings>
       </Button>
+      <Button guid="guidVSExtensionsExportImportCommandPackageCmdSet" id="VSExtensionsImportCommandId" priority="0x0100" type="Button">
+        <Parent guid="guidVSExtensionsExportImportCommandPackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidImages" id="bmpPic1" />
+        <Strings>
+          <ButtonText>Import Extensions</ButtonText>
+        </Strings>
+      </Button>-->
     </Buttons>
 
     <!--The bitmaps section is used to define the bitmaps that are used for the commands.-->

@@ -4,10 +4,12 @@
     <Identity Id="1af89e05-b2dc-49ec-8e91-1521f83f7467" Version="1.0" Language="en-US" Publisher="Vivian Lobo" />
     <DisplayName>VS Extensions Export/Import</DisplayName>
     <Description xml:space="preserve">Provides the ability to Export the list of Visual Studio extensions and then Import the updated and compatible versions of the extensions. </Description>
+    <MoreInfo>https://github.com/vnl/VSExtensionsExportImport</MoreInfo>
     <License>Resources\LICENSE</License>
-    <Icon>Resources\export-icon16x16.png</Icon>
-    <PreviewImage>Resources\export-icon128x128.png</PreviewImage>
-    <Tags>visual studio, extensions</Tags>
+    <ReleaseNotes>https://github.com/vnl/VSExtensionsExportImport/blob/master/CHANGELOG.md</ReleaseNotes>
+    <Icon>Resources\vsexportimport16.ico</Icon>
+    <PreviewImage>Resources\vsexportimport128.png</PreviewImage>
+    <Tags>visual studio, extensions, import, export</Tags>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0]" />
